@@ -1,4 +1,4 @@
 - 👋 Hi, I’m @arteemmius
 - 👀 I’m interested in Java, Pythod, Spring Framework
 - 🌱 I’m currently work java backend developer
-- 📫 How to reach me https://t.me/arteemmius
+- 📫 How to reach me https://www.linkedin.com/in/arteemmius
