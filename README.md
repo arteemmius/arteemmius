@@ -21,8 +21,6 @@
     "year": 2020
   },
   "speaks": ["Russian (native)", "English (B2)"],
-  "side_project": "live captions app for deaf and hard-of-hearing people (early stage)",
-  "fun_fact": "some of my code sleeps in the GitHub Arctic Code Vault",
   "_links": {
     "self":       { "href": "/me" },
     "experience": { "href": "/me/experience" },
