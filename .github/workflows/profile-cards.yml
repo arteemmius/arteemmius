@@ -1,0 +1,58 @@
+# Regenerates the images used in README.md: GitHub stats card + contribution snake.
+# Location in the repo: .github/workflows/profile-cards.yml (repo arteemmius/arteemmius)
+name: Profile cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *"        # daily at 06:00 Moscow time
+  workflow_dispatch:           # "Run workflow" button on the Actions tab
+  push:
+    paths:
+      - .github/workflows/profile-cards.yml   # first run right after this file is committed
+
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      # GITHUB_TOKEN only sees public repositories. To count private work: create a classic PAT
+      # with the `repo` and `read:user` scopes, save it as the PROFILE_PAT repository secret and
+      # replace secrets.GITHUB_TOKEN with secrets.PROFILE_PAT in the two stats steps below.
+      - name: Stats card (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide_title=true&hide=issues&include_all_commits=true&disable_animations=true&card_width=420&border_radius=6&bg_color=00000000&border_color=30363D&text_color=C9D1D9&icon_color=A78BFA
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true   # keep yesterday's card instead of committing an error card
+
+      - name: Stats card (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide_title=true&hide=issues&include_all_commits=true&disable_animations=true&card_width=420&border_radius=6&bg_color=00000000&border_color=D0D7DE&text_color=1F2328&icon_color=6D28D9
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake-dark.svg?palette=github-dark&color_snake=#E44857&color_dots=#161B22,#2E2360,#4C3A9E,#7358D6,#A78BFA
+            profile/snake-light.svg?palette=github-light&color_snake=#E44857&color_dots=#EBEDF0,#DDD6FE,#C4B5FD,#8B5CF6,#6D28D9
+
+      - name: Commit updated images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/
+          git diff --cached --quiet && { echo "Nothing changed"; exit 0; }
+          git commit -m "chore: refresh profile cards"
+          git push
