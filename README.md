@@ -3,10 +3,7 @@
   Images in /profile are regenerated daily by .github/workflows/profile-cards.yml
 -->
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=1100&pause=250&color=A78BFA&multiline=true&repeat=false&width=460&height=130&lines=%24+curl+-i+localhost%3A8080%2Fme;HTTP%2F1.1+200+OK;Content-Type%3A+application%2Fjson;X-Uptime%3A+9%2B+years" />
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=1100&pause=250&color=6D28D9&multiline=true&repeat=false&width=460&height=130&lines=%24+curl+-i+localhost%3A8080%2Fme;HTTP%2F1.1+200+OK;Content-Type%3A+application%2Fjson;X-Uptime%3A+9%2B+years" alt="curl -i localhost:8080/me returns HTTP/1.1 200 OK" />
-</picture>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=1100&pause=250&color=8B5CF6&multiline=true&repeat=false&width=460&height=130&lines=%24+curl+-i+localhost%3A8080%2Fme;HTTP%2F1.1+200+OK;Content-Type%3A+application%2Fjson;X-Uptime%3A+9%2B+years" alt="curl -i localhost:8080/me returns HTTP/1.1 200 OK" />
 
 ```json
 {
@@ -55,40 +52,28 @@
 
 | `key` | `value` |
 |---|---|
-| `languages` | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=java,kotlin,go,py&theme=dark" /><img height="36" src="https://skillicons.dev/icons?i=java,kotlin,go,py&theme=light" alt="Java, Kotlin, Go, Python" /></picture><br>Java, Kotlin, Go, Python, SQL |
-| `frameworks` | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=spring,hibernate&theme=dark" /><img height="36" src="https://skillicons.dev/icons?i=spring,hibernate&theme=light" alt="Spring, Hibernate" /></picture><br>Spring Framework, Hibernate, jOOQ |
-| `integration` | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=kafka,rabbitmq&theme=dark" /><img height="36" src="https://skillicons.dev/icons?i=kafka,rabbitmq&theme=light" alt="Kafka, RabbitMQ" /></picture><br>Apache Kafka, RabbitMQ, REST, SOAP |
-| `storage` | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=postgres,redis&theme=dark" /><img height="36" src="https://skillicons.dev/icons?i=postgres,redis&theme=light" alt="PostgreSQL, Redis" /></picture><br>PostgreSQL, Oracle DB, DB2, Redis, Apache Ignite |
-| `infra` | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=kubernetes,docker,jenkins,elasticsearch,grafana,prometheus&theme=dark" /><img height="36" src="https://skillicons.dev/icons?i=kubernetes,docker,jenkins,elasticsearch,grafana,prometheus&theme=light" alt="Kubernetes, Docker, Jenkins, Elasticsearch, Grafana, Prometheus" /></picture><br>Kubernetes, Docker, Jenkins, ELK, Grafana, Prometheus |
+| `languages` | <img height="36" src="https://skillicons.dev/icons?i=java,kotlin,go,py&theme=dark" alt="Java, Kotlin, Go, Python" /><br>Java, Kotlin, Go, Python, SQL |
+| `frameworks` | <img height="36" src="https://skillicons.dev/icons?i=spring,hibernate&theme=dark" alt="Spring, Hibernate" /><br>Spring Framework, Hibernate, jOOQ |
+| `integration` | <img height="36" src="https://skillicons.dev/icons?i=kafka,rabbitmq&theme=dark" alt="Kafka, RabbitMQ" /><br>Apache Kafka, RabbitMQ, REST, SOAP |
+| `storage` | <img height="36" src="https://skillicons.dev/icons?i=postgres,redis&theme=dark" alt="PostgreSQL, Redis" /><br>PostgreSQL, Oracle DB, DB2, Redis, Apache Ignite |
+| `infra` | <img height="36" src="https://skillicons.dev/icons?i=kubernetes,docker,jenkins,elasticsearch,grafana,prometheus&theme=dark" alt="Kubernetes, Docker, Jenkins, Elasticsearch, Grafana, Prometheus" /><br>Kubernetes, Docker, Jenkins, ELK, Grafana, Prometheus |
 | `architecture` | Microservices, event-driven architecture, high-load |
 | `certified` | Kubernetes for Developers (Slurm, 2025), Basics of Go (Yandex Practicum, 2025), Kafka (Rebrain, 2024), Docker (Rebrain, 2023) |
 
 ### `GET /me/algorithms`
 
 <a href="https://www.codewars.com/users/arteemmius">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://www.codewars.com/users/arteemmius/badges/large" />
-    <img src="https://www.codewars.com/users/arteemmius/badges/large?theme=light" alt="Codewars rank and honor" />
-  </picture>
+  <img src="https://www.codewars.com/users/arteemmius/badges/large" alt="Codewars rank and honor" />
 </a>
 <br /><br />
 <a href="https://leetcode.com/u/arteemmius">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://leetcard.jacoblin.cool/arteemmius?theme=dark&font=JetBrains_Mono&ext=heatmap&hide=ranking&animation=false&radius=6" />
-    <img src="https://leetcard.jacoblin.cool/arteemmius?theme=light&font=JetBrains_Mono&ext=heatmap&hide=ranking&animation=false&radius=6" alt="LeetCode stats with submission heatmap" />
-  </picture>
+  <img src="https://leetcard.jacoblin.cool/arteemmius?theme=dark&font=JetBrains_Mono&ext=heatmap&hide=ranking&animation=false&radius=6" alt="LeetCode stats with submission heatmap" />
 </a>
 
 ### `GET /me/activity`
 
 Public repositories only. My production work on banking platforms and mos.ru lives in private company repositories.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arteemmius/arteemmius/HEAD/profile/stats-dark.svg" />
-  <img src="https://raw.githubusercontent.com/arteemmius/arteemmius/HEAD/profile/stats-light.svg" alt="GitHub stats" />
-</picture>
+<img src="https://raw.githubusercontent.com/arteemmius/arteemmius/HEAD/profile/stats.svg" alt="GitHub stats" />
 <br /><br />
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arteemmius/arteemmius/HEAD/profile/snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/arteemmius/arteemmius/HEAD/profile/snake-light.svg" alt="Snake eating my contribution graph" />
-</picture>
+<img src="https://raw.githubusercontent.com/arteemmius/arteemmius/HEAD/profile/snake.svg" alt="Snake eating my contribution graph" />
