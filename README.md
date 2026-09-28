@@ -75,5 +75,4 @@
 Public repositories only. My production work on banking platforms and mos.ru lives in private company repositories.
 
 <img src="https://raw.githubusercontent.com/arteemmius/arteemmius/HEAD/profile/stats.svg" alt="GitHub stats" />
-<br /><br />
 <img src="https://raw.githubusercontent.com/arteemmius/arteemmius/HEAD/profile/snake.svg" alt="Snake eating my contribution graph" />
